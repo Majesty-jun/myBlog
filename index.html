@@ -2,25 +2,53 @@
 <html lang="ko-KR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Blog</title>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="./css/00_reset.css">
-  <link rel="stylesheet" href="./css/00_common.css">
+  <link rel="stylesheet" href="./css/00_reset.css" />
+  <link rel="stylesheet" href="./css/00_common.css" />
   <link rel="stylesheet" href="./css/01_layout.css" />
+  <link rel="stylesheet" href="./css/02_header.css" />
+  <link rel="stylesheet" href="./css/04_visual.css" />
 </head>
 
 <body>
   <div class="wrap">
+    <!-- header -->
     <header>
       <div class="max-width">
-      header
+        <!-- logo -->
+        <h1>
+          <a href="#">
+            <img src="./img/logo.svg" alt="My Blog" />
+          </a>
+        </h1>
+        <!-- //logo -->
+        <!-- search -->
+        <form class="search-form">
+          <label class="sr-only" for="search">검색</label>
+          <input id="search" type="text" placeholder="SEARCH"/>
+          <button type="submit">
+            <img src="./img/icon-search.svg" alt="검색" />
+          </button>
+        </form>
+        <!-- //search -->
+        <!-- profile button -->
+        <button class="profile-btn" type="button">
+          <img src="./img/profile.jpg" alt="프로필 보기" />
+        </button>
+        <!-- //profile button -->
       </div>
     </header>
+    <!-- //header -->
     <main>
+      <div class="visual">
+        <h2>Skateboard</h2>
+        <img src="./img/main-visual.jpg" alt="" />
+      </div>
       <div class="max-width">
         main
       </div>

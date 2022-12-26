@@ -14,28 +14,12 @@ https://notes.zander.wtf/ios-safari-height-bug
   }
 }
 
-header {
-  background: salmon;
-  height: 5em;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-main {
-  flex-grow: 1;
-  background: slateblue;
-  padding-top: 5em;
-}
-
 footer {
   background: skyblue;
   height: 5em;
 }
 
 .max-width {
-  background: rgba(0, 0, 0, 0.5);
-  width: min((var(--max-width) * 1rem) , calc(100% - 10vw));
+  width: min(calc(var(--max-width) * 1rem), calc(100% - 10vw));
   margin: auto;
 }
